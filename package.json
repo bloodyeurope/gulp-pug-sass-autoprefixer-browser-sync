@@ -1,0 +1,19 @@
+{
+  "name": "init-proyect",
+  "version": "1.0.0",
+  "description": "template de inicio para proyectos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sebastian Perez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "browser-sync": "^2.14.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-pug": "^3.0.4"
+  }
+}
