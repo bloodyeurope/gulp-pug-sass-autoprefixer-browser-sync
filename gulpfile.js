@@ -64,9 +64,9 @@ gulp.task('pugcompile', function buildHTML() {
  * Watch site files reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_sass/*.sass', ['sass']);
+    gulp.watch('_sass/**/*.sass', ['sass']);
     gulp.watch('_js/*.js', ['concatenate']);
-    gulp.watch('_pug/*.pug', ['pugcompile']);
+    gulp.watch('_pug/**/*.pug', ['pugcompile']);
     gulp.watch(['site/*'], ['reload-browser']);
 });
 
@@ -75,4 +75,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync','sass', 'concatenate','pugcompile', 'watch']);
