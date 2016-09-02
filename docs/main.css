@@ -497,7 +497,7 @@ footer.home {
   footer.home .bulb {
     background: rgba(240, 98, 146, 0.5);
     display: none;
-    width: 300px;
+    max-width: 300px;
     -webkit-border-radius: 4px;
             border-radius: 4px;
     position: absolute;
@@ -660,7 +660,7 @@ footer.home {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   border-bottom: 1px solid grey;
-  width: 400px; }
+  max-width: 400px; }
   .contributor a, .contributor a:active, .contributor a:visited {
     color: #4e342e;
     text-decoration: none; }
